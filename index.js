@@ -12,8 +12,6 @@ mongoose.connect(mongoPass, {
     useNewUrlParser: true
 })
 
-const Data = require('./models/data.js')
-
 const bsclient = new Brawlstars.Client(token)
 client.on('ready', () => {
   console.log(`Client ready on ${client.user.tag}`)
