@@ -1,5 +1,5 @@
 require('dotenv').config()
-const mySecret = process.env.TOKEN
+const mySecret = process.env.DISCORD_TOKEN
 const mongoPass = process.env.mongoPass
 const prefix = process.env.prefix
 const Brawlstars = require("brawlstars.js")
