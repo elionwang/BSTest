@@ -6,7 +6,7 @@ const Brawlstars = require("brawlstars.js")
 const Discord = require('discord.js')
 const mongoose = require('mongoose')
 const client = new Discord.Client()
-const token  = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImEwMjBjYmQ5LTdkZmItNDA4MS1iNDQ1LWE4MGFlZWJmMmEzNyIsImlhdCI6MTYxOTQ2NzMxOCwic3ViIjoiZGV2ZWxvcGVyL2ZhYjVhMzFlLWMzNzYtYzlhOS0xMWFkLTFlYjNhMDQ3MDEwNyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiNS4xOTYuMTAwLjIzMiJdLCJ0eXBlIjoiY2xpZW50In1dfQ.VqzY1uLCSxad4faP3XHPAxObjE292W4w-5Uu4NlgMAEsW2fituB9Ya5iD7dNG0bkRpSNOlwLFdzAYMKH3mcPAQ"
+const token  = process.env.BS_TOKEN
 
 mongoose.connect(mongoPass, {
     useNewUrlParser: true
